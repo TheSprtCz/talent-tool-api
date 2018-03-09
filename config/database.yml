@@ -23,8 +23,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: root
+  database: <%= ENV.fetch("PG_DB") { root } %>
   pool: 5
-  username: user
-  password: user
-  host: postgresql
+  username: <%= ENV.fetch("PG_USER") { root } %>
+  password: <%= ENV.fetch("PG_PASSWORD") { root } %>
+  host: <%= ENV.fetch("PG_HOST") { postgresql } %>
