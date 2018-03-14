@@ -1,7 +1,7 @@
 {
-  "realm": "demo",
-  "auth-server-url": "http://localhost:8080/auth",
+  "realm": "Talent Tool",
+  "auth-server-url": "http://keycloak-keycloak.cloudapps.api-qe.eng.rdu2.redhat.com/auth",
   "ssl-required": "external",
-  "resource": "talent-tool-frontend",
+  "resource": "talent-tool",
   "public-client": true
 }
